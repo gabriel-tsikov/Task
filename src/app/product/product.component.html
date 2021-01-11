@@ -1,0 +1,16 @@
+<div class="product-box-holder">
+    <div class="box"> 
+        <div class="background-box">
+            <div class="show-box-holder">
+                <a href="" class="show-box">Show more</a>
+            </div>
+            <div class="price-box">
+                <h2 *ngIf="product.oldPrice != product.newPrice" class="product-price">${{product.oldPrice}}</h2>
+                <h2 class="product-price" class="product-price">${{product.newPrice}}</h2>
+            </div>
+        </div>
+        <div class="information">
+            <h2>{{product.product}}</h2>
+        </div>
+    </div>
+</div>
